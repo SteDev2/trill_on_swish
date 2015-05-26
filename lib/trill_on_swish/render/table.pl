@@ -33,9 +33,9 @@
 :- use_module(library(apply)).
 :- use_module(library(http/html_write)).
 :- use_module(library(http/term_html)).
-:- use_module('../trill_on_swish_render').
+:- use_module('../render').
 
-:- trill_on_swish_register_renderer(trill_on_swish_trill_on_swish_table, "Render data as tables").
+:- register_renderer(table, "Render data as tables").
 
 /** <module> SWISH table renderer
 
